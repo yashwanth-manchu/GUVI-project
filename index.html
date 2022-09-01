@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   
+   <form class="signup-form" action="request.php" method="post">
+
+      <!-- form header -->
+      <div class="form-header">
+        <h1>Sign Up</h1>
+      </div>
+
+      <!-- form body -->
+      <div class="form-body">
+
+        <!-- Firstname and Lastname -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="firstname" class="label-title">First name *</label>
+            <input type="text" name="first_name" id="first_name" class="form-input" placeholder="Enter your first name" required="required" />
+          </div>
+          <div class="form-group right">
+            <label for="lastname" class="label-title">Last name </label>
+            <input type="text" name="last_name" id="last_name" class="form-input" placeholder="Enter your last name" />
+          </div>
+        </div>
+
+        
+
+        
+        <!-- sex and Date of Birth -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label class="label-title">Sex:</label>
+            <div class="input-group">
+              <label for="male"><input type="radio" name="sex" value="male" id="male">Male</label>
+              <label for="female"><input type="radio" name="sex" value="female" id="female"> Female</label>
+            </div>
+          </div>
+          <div class="form-group right">
+            <label class="label-title"> Date of Birth </label>
+            <div >
+              <input type="date" name="date_of_birth" value="date_of_birth" id="date_of_birth">
+              
+            </div>
+          </div>
+        </div>
+		<!-- Email -->
+        <div class="form-group">
+          <label for="email" class="label-title">Email *</label>
+          <input type="email" name="email_id" id="email_id" class="form-input" placeholder="Enter your email address" required="required">
+        </div>
+		<div class="form-group">
+          <label for="phone_number" class="label-title"> phone number *</label>
+          <input type="text" name="phone_number" id="phone_number" class="form-input" placeholder="Enter your phone number" required="required">
+        </div>
+		<div class="form-group">
+          <label for="user-id" class="label-title">User id *</label>
+          <input type="text" name="user_id" id="user_id" class="form-input" placeholder="Enter your User Name" required="required">
+        </div>
+		
+<!-- Password and confirm password -->
+        <div class="horizontal-group">
+          <div class="form-group left">
+            <label for="password" class="label-title">Password *</label>
+            <input type="password"  name="password" id="password" class="form-input" placeholder="Enter your password" required="required">
+          </div>
+          <div class="form-group right">
+            <label for="confirm-password" class="label-title">Confirm Password *</label>
+            <input type="password" class="form-input" name="confirm_password" id="confirm_password" placeholder="Enter your password again" required="required">
+          </div>
+        </div>
+
+        
+      <!-- form-footer -->
+      <div class="form-footer">
+        <span>* required</span>
+        <button type="submit" class="btn">Sign Up</button>
+      </div>
+
+    </form>
+
+      </body>
+</html>
